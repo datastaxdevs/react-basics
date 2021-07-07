@@ -55,8 +55,8 @@ For our Todo App, we are going to want to have a list of Todos, so let's go over
 
 
 ## Step 3 - Basic Component
-- Create a folder, `components`
-- Create a new file, `List.js`
+- Create a folder, `src/components`
+- Create a new file, `src/components/List.js`
 
 ✅ **Step 3a:** Edit `List.js`
 ``` javascript
@@ -195,7 +195,7 @@ Now our component is dynamic! All we need to do is get a list of items as an arr
 
 Let's make another new component
 
-✅ **Step 5a:** Create `components/Item.js`
+✅ **Step 5a:** Create `src/components/Item.js`
 ``` javascript
 import React from 'react';
 
