@@ -1,4 +1,4 @@
-[<-- Back to Main](https://github.com/datastaxdevs/appdev-week1-todolist/blob/main/README.md)
+[<-- Back to Main](https://github.com/datastaxdevs/appdev-week1-todolist/edit/main/README.md#6-launch-gitpod-ide)
 
 # Setup Basic App - Create React App
 
@@ -293,4 +293,4 @@ export default Item;
 
 Voila!
 
-[<-- Back to Main](https://github.com/datastaxdevs/appdev-week1-todolist/blob/main/README.md)
+[<-- Back to Main](https://github.com/datastaxdevs/appdev-week1-todolist/edit/main/README.md#6-launch-gitpod-ide)
