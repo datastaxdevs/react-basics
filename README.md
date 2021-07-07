@@ -3,7 +3,9 @@
 # Setup Basic App - Create React App
 
 ## Step 1 - Start in a clean environment
-Make sure you are in a clean environment as a starting point.
+- Click the button to launch the GitPod IDE.
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/datastaxdevs/react-basics/)
 
 
 ## Step 2 - create-react-app
