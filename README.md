@@ -293,4 +293,43 @@ export default Item;
 
 Voila!
 
+## Step 5 - State
+
+Wait. There's some extra stuff in there. What is this `React.useState()` stuff!?!
+
+Before we talk about State, let's briefly talk about how React renders things.
+
+###  Rendering
+
+Ok, so by now you should be familiar with the `return()` block. In our latest version of `Item.js` it looks like this:
+
+``` javascript
+return (
+    <div>
+        <input
+            type="checkbox"
+            checked={isChecked}
+            onChange={() => setIsChecked(true)}
+        />
+        <label>{item}</label>
+    </div>
+);
+```
+
+This contains the HTML that is injected into the virtual DOM when this component is used. However, this is initially done when the component first 'mounts' or initilizes and that's it. *Unless* there is a `prop` or `state` change. So in the case of our `Item.js` component. If the `item` prop is updated from the parent component, it will trigger a re-render. But what if we don't want to rely on the parent component updating the `prop`? We can use `state`.
+
+So in the case of our `Item.js` component. We want to re-render the component whenever the checkbox is checked, so we can actually see the checked checkbox. For this we are using a `state` variable called `isChecked` and we initialize it like this:
+
+``` javascript
+const [isChecked, setIsChecked] = React.useState(false);
+```
+
+This is called a React Hook. Hooks are built in methods that we can use to do certain things, in this case create and manage a state variable.
+
+So how does it work?
+
+Well, the `useState()` hook takes an array of 2 variables, the first will be our state variable - `isChecked` and the second will be the function we use to update that state variable - `setIsChecked`. Then we initialize the `useState()` hook with the variable's initial value, in this case `false` since the checkbox will start out unchecked.
+
+Now when we call  `setIsChecked(true)` whenever the checkbox changes, the state variable will change to true, triggering a re-render and making our checkbox checked.
+
 [<-- Back to Main](https://github.com/datastaxdevs/appdev-week1-todolist/blob/main/README.md#6-launch-gitpod-ide)
